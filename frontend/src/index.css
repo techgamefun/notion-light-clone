@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* Apply styles to contenteditable inside the editor */
+.editor-content .ProseMirror {
+  @apply sm:h-screen px-28 pt-28 focus:outline-none;
+}
+/* style.css or global.css */
+ul,
+ol {
+  padding-left: 1.5rem; /* or whatever spacing you want */
+  list-style: disc; /* for ul */
+}
+
+ol {
+  list-style: decimal; /* for ol */
+}
+
+.editor-content h1 {
+  @apply text-4xl font-bold;
+}
+.editor-content h2 {
+  @apply text-3xl font-semibold;
+}
+.editor-content h3 {
+  @apply text-2xl font-semibold;
+}
+.editor-content h4 {
+  @apply text-xl font-medium;
+}
+.editor-content h5 {
+  @apply text-lg font-medium;
+}
+.editor-content h6 {
+  @apply text-base font-medium;
+}
+
+/* Add this to your global CSS */
+.scrollbar-notion {
+  scrollbar-width: thin;
+  scrollbar-color: #bbb #f1f1f1;
+}
+
+.scrollbar-notion::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-notion::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.scrollbar-notion::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
