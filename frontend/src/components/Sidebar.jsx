@@ -1,10 +1,10 @@
 import { React, useEffect, useState } from "react";
-import LogoutBtn from "./logoutBtn"; // Import the LogoutBtn component
+import LogoutBtn from "./LogoutBtn.jsx"; // Import the LogoutBtn component
 import { useAuth } from "../context/AuthProvider"; // Import the AuthProvider context
 import { getNotes, deleteNote } from "../api/notes";
 
 const Sidebar = () => {
-  const { user, setUser, editorContent, setEditorContent, noteId, setNoteId } =
+  const { user, editorContent, setEditorContent, noteId, setNoteId } =
     useAuth(); // Get the user from the AuthProvider context
 
   const handleDelete = async (noteId) => {
